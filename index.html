@@ -26,7 +26,17 @@ clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agre
 		 var s = document.getElementsByTagName('script')[0];
 		 s.parentNode.insertBefore(wzrk, s);
   })();
+	clevertap.notifications.push({
+		"titleText":"Do you want to subscribe to web push?",
+		"bodyText":"Get updates",
+		"rejectButtonText":'No',
+		"okButtonText":'Yes'});
 </script>
+	<style>
+.wzrk-button-container button {
+		background-color:#00FF00,
+		border-style: solid;}
+	  </style>
 
 
 </head>
