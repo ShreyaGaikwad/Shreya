@@ -39,10 +39,17 @@ clevertap.privacy.push({useIP: true}); //set the flag to true, if the user agree
 		background-color:#00FF00,
 		border-style: solid;}
 	  </style>
-
+<link rel="manifest" href="/manifest.json"/>
 
 </head>
 <body>
+<input type="button" onclick="sendEvent()" value="Fire event"/>
+<script>
+    function sendEvent() {
+        clevertap.event.push("<can add system events or custom events here>")
+    }
+</script>
+<scripts src="clevertap_sw.js"></scripts>	
 
 <h1>Shreya</h1>
 <p>My Website.</p>
