@@ -1,91 +1,35 @@
 <html>
-<title>Shreya</title>
-<script type="text/javascript">
+  <head>
+    <title>
+    </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
      var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
  // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
-clevertap.account.push({"id": "679-66K-8K6Z"});
+clevertap.account.push({"id": "TEST-679-66K-8K6Z"});
 clevertap.privacy.push({optOut: false}); //set the flag to true, if the user of the device opts out of sharing their data
-clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agrees to share their IP data
- (function () {
-         var wzrk = document.createElement('script');
-         wzrk.type = 'text/javascript';
-         wzrk.async = true;
-         wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
-         var s = document.getElementsByTagName('script')[0];
-         s.parentNode.insertBefore(wzrk, s);
+clevertap.privacy.push({useIP: true}); //set the flag to true, if the user agrees to share their IP data
   })();
-	
+	    
 	clevertap.notifications.push({
-  "titleText":'Would you like to receive Push Notifications?',
-  "bodyText":'We promise to only send you relevant content and give you updates on your transactions',
-  "okButtonText":'Sign me up!',
-  "rejectButtonText":'No thanks',
-  "okButtonColor":'#f28046'});
+		"titleText":"Do you want to subscribe to web push?",
+		"bodyText":"Get updates",
+		"rejectButtonText":'No',
+		"okButtonText":'Yes'});
+	    
 </script>
+<style>
+.wzrk-button-container button {
+		background-color:#00FF00,
+		border-style: solid;}
+	  </style>
 	
+	  
 
+  </head>
+  <body>
 
-
-  
-</head>
-<body>
-<input type="button" onclick="sendEvent()" value="Fire event"/>
-<script>
-    function sendEvent() {
-        clevertap.event.push("<can add system events or custom events here>")
-    }
-</script>
-	
-
-<h1>Shreya</h1>
-	
-	<button
-                                          style="
-                                            background-color: #400088;
-                                            border-radius: 4px;
-                                            border: 0 solid transparent;
-                                            color: #fff;
-                                            font-family: Arial, Helvetica Neue,
-                                              Helvetica, sans-serif;
-                                            text-align: center;
-                                            font-weight: 400;
-                                            padding-left: 20px;
-                                            padding-right: 20px;
-                                            padding-top: 5px;
-                                            padding-bottom: 5px;
-                                          "
-                                        >
-                                          <span
-                                            dir="ltr"
-                                            style="
-                                              word-break: break-word;
-                                              line-height: 28px;
-                                            "
-                                          >
-                                            <a
-                                              data-track="off"
-                                              href="donotoverrride"
-                                            >
-                                              <a
-                                                data-track="off"
-                                                href="https://umore.onelink.me/X1j6/InviteFriends"
-                                                target="_blank"
-                                                style="
-                                                  color: #fff;
-                                                  font-family: Arial,
-                                                    Helvetica Neue, Helvetica,
-                                                    sans-serif;
-                                                  text-align: center;
-                                                  font-weight: 400;
-                                                  text-decoration: none;
-                                                "
-                                              >
-                                                <strong>Add buddy!</strong></a
-                                              >
-                                            </a>
-                                          </span>
-                                        </button>
-<p>My Website. 3</p>
-
-</body>
+<img src="https://i.pinimg.com/originals/bd/68/7b/bd687b4c91c8115336effd10587538e5.jpg" style=" height:auto; width:100%;"/>   </body>
 </html>
+  
