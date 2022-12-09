@@ -19,10 +19,7 @@ clevertap.privacy.push({useIP: true}); //set the flag to true, if the user agree
 </head>
 <body>
 
-<input type=button onClick="location.href='shreya.html'"
- value='gtm onuserlogint'>
- 
- dataLayer.push({'email': 'shreya@test.com'});
+
 
 <script type="text/javascript">
 			function createUser() {
@@ -43,57 +40,16 @@ clevertap.privacy.push({useIP: true}); //set the flag to true, if the user agree
 				})
 			}
 			function pushevent(){
-				clevertap.event.push("Webpush");
+				clevertap.event.push("Web event");
 			}
-			function webpopevent(){
-				clevertap.event.push("Webpop");
-			}
-			function notifyperm(){
-			var flag = 0; 
-			clevertap.notifications.push({
-				  "titleText":'Would you like to receive Push Notifications?',
-				  "bodyText":'We promise to only send you relevant content and give you updates on your transactions',
-				  "okButtonText":'Sign me up!',
-				  "rejectButtonText":'No thanks',
-				  "okButtonColor":'#778046',
-				  "okCallback":function () {
-				   	flag = 1;
-					 console.log("flag set"+flag);
-			       	   },
-				   "rejectCallback":function () {
-				   	flag = 1;
-					console.log("flag set"+flag);
-			           },
-       				   "subscriptionCallback":function () {
-           				flag = 1;
-					console.log("flag set"+flag);
-       				   },
-				   "testvar":function () {
-					   flag = 1;
-					 console.log("flag set"+flag);
-			       	   },
-				});
-				if(!flag){
-					console.log("flag set"+flag);
-				}
-			}
-			function exitintent(){
-				clevertap.event.push("AbexitIntent");
-			}
+			
 		</script>
 		
-		<script>
-window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({
-dataLayer.push({'email': 's@clev.com'});
- });
-</script>
+		
 		<form>  
          <input type = "button" onclick = "createUser()" value = "Create User"><br>  
-		 <input type = "button" onclick = "pushevent()" value = "Web Push event"><br> 
-		 <input type = "button" onclick = "notifyperm()" value = "Request Permission"><br>
-		 <input type = "button" onclick = "webpopevent()" value = "Web Pop event"><br>
-		 <input type = "button" onclick = "exitintent()" value = "Exit Website"><br>
+		 <input type = "button" onclick = "pushevent()" value = "Web event"><br> 
+
       </form> 
 
 </body>
